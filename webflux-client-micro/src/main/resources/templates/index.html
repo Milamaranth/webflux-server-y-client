@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="ISO-8859-1">
+    <title>Bootcamp - Reto de WebFlux</title>
+</head>
+
+<body>
+    <table>
+        <tr th:each="person:${people}">
+            <td th:text="${person.firstname}"></td>
+            <td th:text="${person.lastname}"></td>
+            <td th:text="${person.age}"></td>
+        </tr>
+    </table>
+</body>
+
+</html>
